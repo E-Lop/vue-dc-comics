@@ -1,11 +1,15 @@
 <template>
   <div id="app">
-    <MyHeader />
+    <div class="container">
+      <MyHeader />
+    </div>
     <main>
-      <section>Content goes here</section>
-      <section>seconda section con sfondo blu</section>
+      <div class="container">
+        <section>Content goes here</section>
+        <section>seconda section con sfondo blu</section>
+      </div>
     </main>
-    <MyFooter />
+    <div class="container"><MyFooter /></div>
   </div>
 </template>
 
