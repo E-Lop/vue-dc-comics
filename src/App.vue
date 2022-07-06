@@ -2,10 +2,10 @@
   <div id="app">
     <MyHeader />
     <main>
-      <section .main_content_section>
+      <section class="main_content_section">
         <div class="container">Content goes here</div>
       </section>
-      <section .store_section>
+      <section class="store_section">
         <div class="container">seconda section con sfondo blu</div>
       </section>
     </main>
@@ -31,6 +31,12 @@ export default {
 @import './style/common';
 @import './style/variables';
 
+.main_content_section {
+  height: 100px;
+  /* todo test */
+  background-color: lightblue;
+  line-height: 100px;
+}
 .store_section {
   background-color: $main_color;
 }
