@@ -3,6 +3,12 @@
   <section .footer-bottom>social</section>
 </template>
 
+<script>
+export default {
+  name: 'MyFooter',
+};
+</script>
+
 <style lang="scss" scoped>
 .footer-top {
   padding-top: 20px;

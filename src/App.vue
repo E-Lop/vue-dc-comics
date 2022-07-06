@@ -4,12 +4,16 @@
       <MyHeader />
     </div>
     <main>
-      <div class="container">
-        <section>Content goes here</section>
-        <section>seconda section con sfondo blu</section>
-      </div>
+      <section .main_content_section>
+        <div class="container">Content goes here</div>
+      </section>
+      <section .store_section>
+        <div class="container">seconda section con sfondo blu</div>
+      </section>
     </main>
-    <div class="container"><MyFooter /></div>
+    <div class="container">
+      <MyFooter />
+    </div>
   </div>
 </template>
 
@@ -30,4 +34,8 @@ export default {
 <style lang="scss">
 @import './style/common';
 @import './style/variables';
+
+.store_section {
+  background-color: $main_color;
+}
 </style>
