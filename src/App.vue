@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <div class="container">
-      <MyHeader />
-    </div>
+    <MyHeader />
     <main>
       <section .main_content_section>
         <div class="container">Content goes here</div>
@@ -11,9 +9,7 @@
         <div class="container">seconda section con sfondo blu</div>
       </section>
     </main>
-    <div class="container">
-      <MyFooter />
-    </div>
+    <MyFooter />
   </div>
 </template>
 

@@ -1,6 +1,8 @@
 <template>
-  <section .footer-top>DC Comics</section>
-  <section .footer-bottom>social</section>
+  <div class="container">
+    <section .footer-top>DC Comics</section>
+    <section .footer-bottom>social</section>
+  </div>
 </template>
 
 <script>

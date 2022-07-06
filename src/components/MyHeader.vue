@@ -1,13 +1,15 @@
 <template>
   <div>
-    <section>
-      <div class="col-sx">
-        <div class="image-logo">
-          <img src="../assets/img/dc-logo.png" alt="Logo DC Comics" />
+    <div class="container">
+      <section>
+        <div class="col-sx">
+          <div class="image-logo">
+            <img src="../assets/img/dc-logo.png" alt="Logo DC Comics" />
+          </div>
         </div>
-      </div>
-      <div class="col-dx">lista di sezioni del sito</div>
-    </section>
+        <div class="col-dx">lista di sezioni del sito</div>
+      </section>
+    </div>
   </div>
 </template>
 
