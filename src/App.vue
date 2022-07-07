@@ -72,8 +72,7 @@ export default {
 @import './style/variables';
 
 .main_content_section {
-  /* todo test */
-  background-color: lightblue;
+  background-color: #1c1c1c;
 }
 .store_section {
   background-color: $main_color;

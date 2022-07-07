@@ -19,7 +19,16 @@ export default {
   padding: 10px;
   width: calc((100% / 6) - 5px);
   margin: 2px;
-  //   todo test
-  background-color: white;
+}
+img {
+  height: 164px;
+  object-fit: cover;
+  object-position: top;
+  overflow: hidden;
+}
+h2 {
+  padding-top: 2px;
+  font-size: 0.8rem;
+  color: white;
 }
 </style>
