@@ -3,7 +3,7 @@
     <MyHeader />
     <main>
       <section class="main_content_section">
-        <div class="container">Content goes here</div>
+        <ComicsPage />
       </section>
       <section class="store_section">
         <div class="container">
@@ -24,12 +24,14 @@
 // import HelloWorld from './components/HelloWorld.vue'
 import MyHeader from './components/MyHeader.vue';
 import MyFooter from './components/MyFooter.vue';
+import ComicsPage from './components/ComicsPage.vue';
 
 export default {
   name: 'App',
   components: {
     MyHeader,
     MyFooter,
+    ComicsPage,
   },
   data() {
     return {
@@ -70,10 +72,8 @@ export default {
 @import './style/variables';
 
 .main_content_section {
-  height: 100px;
   /* todo test */
   background-color: lightblue;
-  line-height: 100px;
 }
 .store_section {
   background-color: $main_color;
@@ -99,6 +99,7 @@ export default {
     width: 50px;
     height: 50px;
     object-fit: contain;
+    margin-right: 5px;
   }
 }
 .store_section {
