@@ -21,7 +21,8 @@ export default {
   margin: 2px;
 }
 img {
-  height: 164px;
+  widows: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
   object-position: top;
   overflow: hidden;
