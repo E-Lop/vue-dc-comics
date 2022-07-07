@@ -8,6 +8,12 @@
       <MyBanner />
       <!-- PRODOTTI SELEZIONATI -->
       <section class="main_content_section">
+        <!-- tasto current series -->
+        <div class="container">
+          <div class="current_series_btn">
+            <a href="#">CURRENT SERIES</a>
+          </div>
+        </div>
         <ComicsPage />
         <!-- tasto load more -->
         <div class="load_more_btn">
@@ -85,6 +91,25 @@ export default {
 @import './style/variables';
 
 /* Sezione principale prodotti selezionati */
+.main_content_section {
+  .container {
+    position: relative;
+  }
+}
+.current_series_btn {
+  width: 180px;
+  background-color: $main_color;
+  text-align: center;
+  padding: 5px 10px;
+  position: absolute;
+  top: -35px;
+  left: 0;
+  a {
+    font-size: 1.2rem;
+    color: white;
+  }
+}
+
 .main_content_section {
   background-color: #1c1c1c;
   padding-top: 20px;
