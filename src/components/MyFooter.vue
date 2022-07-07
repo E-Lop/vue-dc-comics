@@ -238,6 +238,10 @@ export default {
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-right: 30px;
+  }
+  li {
+    margin-right: 30px;
   }
 }
 .col_dx {
@@ -258,6 +262,7 @@ export default {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-content: flex-start;
   a {
     color: #657b81;
   }
