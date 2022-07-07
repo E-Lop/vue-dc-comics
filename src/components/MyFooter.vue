@@ -1,8 +1,10 @@
 <template>
   <div>
+    <!-- FOOTER TOP -->
     <section class="footer-top">
       <div class="container">
         <div class="content_at_top">
+          <!-- colonna sx footer top -->
           <div class="col_sx">
             <div class="sitemap_links">
               <h2>DC COMICS</h2>
@@ -31,6 +33,7 @@
               </ul>
             </div>
           </div>
+          <!-- colonna dx footer top -->
           <div class="col_dx">
             <img
               src="../assets/img/dc-logo-bg.png"
@@ -40,8 +43,27 @@
         </div>
       </div>
     </section>
+    <!-- FOOTER BOTTOM -->
     <section class="footer-bottom">
-      <div class="container">social</div>
+      <div class="container">
+        <div class="content_at_bottom">
+          <!-- colonna sx footer bottom -->
+          <div class="col_sx_social">
+            <span>SIGN-UP NOW!</span>
+          </div>
+          <!-- colonna dx footer bottom -->
+          <div class="col_dx_social">
+            <span>FOLLOW US</span>
+            <ul>
+              <li v-for="(element, index) in footerSocialSites" :key="index">
+                <a :href="element.link">
+                  <img :src="element.image" alt="element.name" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -159,12 +181,40 @@ export default {
           link: '#',
         },
       ],
+      footerSocialSites: [
+        {
+          image: require('../assets/img/footer-facebook.png'),
+          name: 'Facebook',
+          link: '#',
+        },
+        {
+          image: require('../assets/img/footer-twitter.png'),
+          name: 'Twitter',
+          link: '#',
+        },
+        {
+          image: require('../assets/img/footer-youtube.png'),
+          name: 'Youtube',
+          link: '#',
+        },
+        {
+          image: require('../assets/img/footer-pinterest.png'),
+          name: 'Pinterest',
+          link: '#',
+        },
+        {
+          image: require('../assets/img/footer-periscope.png'),
+          name: 'Periscope',
+          link: '#',
+        },
+      ],
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
+@import '../style/variables';
 /* FOOTER TOP */
 .footer-top {
   height: 300px;
@@ -195,8 +245,10 @@ export default {
   display: flex;
   align-items: center;
   img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     overflow: hidden;
-    align-self: center;
   }
 }
 .sitemap_links {
@@ -214,5 +266,36 @@ export default {
 .footer-bottom {
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: #303030;
+}
+.content_at_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.col_sx_social {
+  width: 20%;
+  color: white;
+  padding: 25px 0;
+  span {
+    padding: 10px 10px;
+    border: 1px solid $main_color;
+  }
+}
+.col_dx_social {
+  width: 80%;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  span {
+    color: $main_color;
+  }
+  ul {
+    display: flex;
+    li {
+      margin-left: 20px;
+    }
+  }
 }
 </style>
