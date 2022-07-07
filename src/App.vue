@@ -4,6 +4,8 @@
     <MyHeader />
     <!-- MAIN -->
     <main>
+      <!-- BANNER -->
+      <MyBanner />
       <!-- PRODOTTI SELEZIONATI -->
       <section class="main_content_section">
         <ComicsPage />
@@ -34,6 +36,7 @@
 import MyHeader from './components/MyHeader.vue';
 import MyFooter from './components/MyFooter.vue';
 import ComicsPage from './components/ComicsPage.vue';
+import MyBanner from './components/MyBanner.vue';
 
 export default {
   name: 'App',
@@ -41,6 +44,7 @@ export default {
     MyHeader,
     MyFooter,
     ComicsPage,
+    MyBanner,
   },
   data() {
     return {
