@@ -28,7 +28,7 @@ img {
 }
 h2 {
   padding-top: 2px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: white;
 }
 </style>

@@ -2,11 +2,13 @@
   <div>
     <div class="container">
       <section>
+        <!-- parte sinistra con logo -->
         <div class="col-sx">
           <div class="image-logo">
             <img src="../assets/img/dc-logo.png" alt="Logo DC Comics" />
           </div>
         </div>
+        <!-- parte destra con navigazione -->
         <div class="col-dx">
           <nav>
             <ul>
@@ -14,6 +16,7 @@
                 <a :class="{ current: pippo.current }" :href="pippo.link">{{
                   pippo.name
                 }}</a>
+                <span class="underline"></span>
               </li>
             </ul>
           </nav>
@@ -93,19 +96,31 @@ section {
   align-items: center;
   justify-content: space-between;
 }
+/* parte sinistra del logo */
 .image-logo {
   width: 60px;
 }
+/* parte destra di navigazione */
 ul {
   display: flex;
 }
 li {
   margin-left: 30px;
+  position: relative;
 }
 li {
-  .current {
-    border-bottom: 5px solid $main_color;
-  }
+}
+.underline {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: $main_color;
+  left: 0;
+  top: 300%;
+  display: none;
+}
+.current + .underline {
+  display: block;
 }
 .current {
   color: $main_color;
